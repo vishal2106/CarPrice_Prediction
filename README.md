@@ -9,6 +9,7 @@ A mini project using Flask and RandomForest classifier which predicts the price 
 
 ![GitHub Logo](/images/logo-heroku.png) ![GitHub Logo](/images/logo-flask.png)
 
+[Heroku link for live version](https://usedcarvalue.herokuapp.com/)
 
 ### Try it out
 
