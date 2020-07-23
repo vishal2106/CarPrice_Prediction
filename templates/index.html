@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="static/qfc-dark.css">
+    <title>Car Selling Price</title>
+</head>
+
+<body>
+    <div class="qfc-container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <div>
+                <div>
+                    <label>Predict Used Car Price</label>
+                </div>
+                <div>
+                    <input placeholder="Bought in which year?" name="Year" type="integer" required >
+                </div>
+                <div>
+                    <input placeholder="How Many Kilometers Driven?" name="Kms_Driven" type="integer" required >
+                </div>
+                <div>
+                    <input placeholder="What is the Showroom Price?(In lakhs)" type="integer" name="Present_Price" required>
+                </div>
+                <div>
+                    <label>How much owners previously had the car(0 or 1 or 3) ?</label>
+                    <select name="Owner" required>
+                        <option disabled selected value="--">Select Your Option</option>
+                        <option value=0>0</option>
+                        <option value=1>1</option>
+                        <option value=3>3</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>What Is the Fuel type?</label>
+                    <select name="Fuel_Type_Petrol" required>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Diesel">CNG</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>Are you A Dealer or Individual?</label>
+                    <select name="Seller_Type_Individual" required>
+                        <option value="Dealer">Dealer</option>
+                        <option value="Individual">Individual</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>Transmission type?</label>
+                    <select name="Transmission_Mannual" required>
+                        <option value="Mannual">Manual Car</option>
+                        <option value="Automatic">Automatic Car</option>
+                    </select>
+                  </div>
+                <div>
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+        </form>
+        <h3>{{ prediction_text }}<h3></h3>
+    </div>
+  </body>
+  <style>
+    a {
+      color :#00bcd4;
+      text-decoration: none;
+    }
+  </style>
+  </html>
