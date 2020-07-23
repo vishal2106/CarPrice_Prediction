@@ -5,7 +5,8 @@ A mini project using Flask and RandomForest classifier which predicts the price 
 ### Tech
 * [Flask] - Backend for light weight apps
 * [Heroku] - awesome for quick deployment
-* [ML model] - Checkout ipynb file for the ML code
+
+
 ![GitHub Logo](/images/logo-heroku.png) ![GitHub Logo](/images/logo-flask.png)
 
 
