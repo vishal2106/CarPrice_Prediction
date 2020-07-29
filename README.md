@@ -23,7 +23,7 @@ $ python app.py
 
 ### Todos
 
- - Improve UI sing React.js
+ - Improve UI using React.js
  - Make a more robust DL model
  - Productionize the app using Docker
 
